@@ -1,10 +1,14 @@
 .main {
   position: relative;
+  /* font-style: italic; */
+  color: #363636;
+  box-shadow: rgba(0,0,0,0.05);
+  font: regular 400;
 }
 
 .navigation {
-display: inline-block;
-  Float: left;
+  display: inline-block;
+  float: left;
   width: 14px;
   height: 650px;
   border: 0px;
@@ -14,12 +18,32 @@ display: inline-block;
 .column1 {
   display: inline-block;
   position: absolute;
-  Float: left;
+  float: left;
   width: 650px;
   height: 680px;
   border: 0px;
   padding: 30px;
-  background-color: #edebe6;
+  background-color: #f5f5f5;
+}
+.column2 {
+  display: inline-block;
+  position: absolute;
+  float: left;
+  width: 50%;
+  height: 740px;
+  right: 0px;
+  padding: 0px;
+  background-color: #f5f5f5;
+}
+
+.container2{
+display: inline-block;
+position: absolute;
+margin-top: 116px;
+margin-left: 35px;
+background-color: white;
+height: 70%;
+width: 90%;
 }
 
 h1 {
@@ -119,6 +143,34 @@ margin: 13px;
   color: white;
 }
 
+/* .recent-transaction-title {
+  margin-top: 45px;
+  margin-left: 30px;
+  font-size: 350px;
+  font-weight: bold;
+} */
+.transaction-header {
+  display: inline-block;
+  float: left;
+  margin-left: 25px;
+  font-size: 30px;
+  /* height: 500px; */
+}
+.transaction-button {
+  float: right;
+  margin-top: 35px;
+  margin-right: 25px;
+  /* margin-bottom: 10px; */
+  width: 200px;
+  height: 35px;
+  background-color: #1CA3BA;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 14px;
+  /* font-weight: bold; */
+  color: white;
+}
+
 .account-table {
   float: left;
   margin-left: -95px;
@@ -127,6 +179,55 @@ margin: 13px;
   height: 65px;
   background-color: white;
   font-size: 18px;
+}
+.transaction-title{
+  width: 92%;
+  border-bottom: 1px solid silver;
+  margin-left: 25px;
+  /* margin-right: -25px; */
+  left: 10px;
+}
+
+.titleDate{
+  width: 20px;
+}
+
+.titlePayee {
+  width: 40%;
+}
+
+.titleInflow{
+  width: 25%;
+}
+
+.titleOutflow{
+  width: 10%;
+}
+
+.tInput{
+  width: 92%;
+  border-bottom: 1px solid #cccccc;
+  margin-left: 25px;
+  /* margin-right: -25px; */
+  left: 10px;
+}
+
+.tInputDate{
+  width: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.tInputPayee {
+  width: 40%;
+}
+
+.tInputInflow{
+  width: 25%;
+}
+
+.tInputOutflow{
+  width: 10%;
 }
 
 .account-info1 {
@@ -139,10 +240,6 @@ width: 30%;
 
 .account-info3 {
 padding-left: 130px;
-}
-
-.account-image {
-
 }
 
 .account-icon {
