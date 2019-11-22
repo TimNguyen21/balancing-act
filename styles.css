@@ -1,11 +1,12 @@
 body {
   background-color: #f5f5f5;
   margin: 0px;
+  font-family: 'Biryani', sans-serif;
 }
 
 h1 {
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 21px;
 }
 
 h2 {
@@ -63,13 +64,13 @@ h2 {
   margin-right: 30px;
   background-color: white;
   text-align: left;
-  font-size: 15px;
+  font-size: 11px;
   box-shadow: rgba(0,0,0,0.05);
 }
 
 .amount {
   display: block;
-  margin-top: 10px;
+  margin-top: 0px;
   font-size: 20px;
 }
 /* ---user summary---end--- */
@@ -98,9 +99,9 @@ h2 {
 
 .account-table {
   float: left;
-  margin-left: -95px;
+  margin-left: -113px;
   margin-top: 15px;
-  width: 570px;
+  width: 575px;
   height: 65px;
   background-color: white;
   font-size: 18px;
@@ -124,7 +125,7 @@ padding-left: 130px;
   display: inline-block;
   position: absolute;
   float: left;
-  width: 50%;
+  width: 730px;
   height: 740px;
   left: 710px;
   padding: 0px;
@@ -146,13 +147,14 @@ width: 90%;
   display: inline-block;
   float: left;
   margin-left: 25px;
-  font-size: 30px;
+  font-size: 25px;
+  margin-bottom: 15px;
   box-shadow: rgba(0,0,0,0.05);
 }
 
 .transaction-title{
   width: 92%;
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid #F6F3F1;
   margin-left: 25px;
   left: 10px;
 }
@@ -192,20 +194,21 @@ width: 90%;
   border-bottom: 1px solid #cccccc;
   margin-left: 25px;
   left: 10px;
+  font-size: 13.5px;
 }
 
 .transactionsInputDate{
   width: 20px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .transactionsInputPayee {
-  width: 40%;
+  width: 40.5%;
 }
 
 .transactionsInputInflow{
-  width: 25%;
+  width: 26%;
 }
 
 .transactionsInputOutflow{
