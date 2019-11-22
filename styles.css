@@ -1,8 +1,19 @@
-
+body {
+  background-color: #f5f5f5;
+  margin: 0px;
 }
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 35px;
+}
+
 .main {
   position: relative;
-  /* font-style: italic; */
   color: #363636;
   font: regular 400;
 }
@@ -11,7 +22,7 @@
   display: inline-block;
   float: left;
   width: 14px;
-  height: 680px;
+  height: 1000px;
   border: 0px;
   padding: 30px;
   background-color: white;
@@ -25,17 +36,98 @@
   height: 680px;
   border: 0px;
   padding: 30px;
-  background-color: #f5f5f5;
 }
+
+.welcome-box {
+  position: relative;
+  width: 550px;
+  border: 0px;
+  margin-top: 20px;
+  padding: 30px 0px 30px 25px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #8ed1dc 0%, #e3f4f6 100%);
+  text-align: left;
+  font-size: 20px;
+  box-shadow: rgba(0,0,0,0.05);
+}
+
+/* ---user summary---begin--- */
+.summary {
+  float:left;
+  width: 156px;
+  height: 40px;
+  border: 100px;
+  padding: 20px 0px 30px 15px;
+  margin-left: 0px;
+  margin-right: 30px;
+  background-color: white;
+  text-align: left;
+  font-size: 15px;
+  box-shadow: rgba(0,0,0,0.05);
+}
+
+.amount {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+}
+/* ---user summary---end--- */
+
+
+/* ---accounts block---begin--- */
+.account-header {
+  display: inline-block;
+  float: left;
+  height: 500px;
+}
+
+.manage-button {
+  float: right;
+  margin-top: 35px;
+  margin-right: 75px;
+  width: 200px;
+  height: 35px;
+  background-color: #1CA3BA;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 14px;
+  color: white;
+  box-shadow: rgba(0,0,0,0.05);
+}
+
+.account-table {
+  float: left;
+  margin-left: -95px;
+  margin-top: 15px;
+  width: 570px;
+  height: 65px;
+  background-color: white;
+  font-size: 18px;
+  box-shadow: rgba(0,0,0,0.05);
+}
+
+.account-info1 {
+width: 20%;
+}
+
+.account-info2 {
+width: 30%;
+}
+
+.account-info3 {
+padding-left: 130px;
+}
+/* ---accounts block---end--- */
+
 .column2 {
   display: inline-block;
   position: absolute;
   float: left;
   width: 50%;
   height: 740px;
-  right: 0px;
+  left: 710px;
   padding: 0px;
-  background-color: #f5f5f5;
 }
 
 .container2{
@@ -48,14 +140,81 @@ height: 70%;
 width: 90%;
 }
 
-h1 {
-  margin-top: 10px;
-  margin-bottom: 40px;
+
+/* ---recent transactions block---begin--- */
+.transaction-header {
+  display: inline-block;
+  float: left;
+  margin-left: 25px;
+  font-size: 30px;
+  box-shadow: rgba(0,0,0,0.05);
 }
-h2 {
+
+.transaction-title{
+  width: 92%;
+  border-bottom: 1px solid silver;
+  margin-left: 25px;
+  left: 10px;
+}
+
+.transaction-button {
+  float: right;
   margin-top: 35px;
-  /* margin-bottom: 25px; */
+  margin-right: 25px;
+  width: 200px;
+  height: 35px;
+  background-color: #1CA3BA;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 14px;
+  color: white;
+  box-shadow: rgba(0,0,0,0.05);
 }
+
+.titleDate{
+  width: 20px;
+}
+
+.titlePayee {
+  width: 40%;
+}
+
+.titleInflow{
+  width: 25%;
+}
+
+.titleOutflow{
+  width: 10%;
+}
+
+.transactionsInput{
+  width: 92%;
+  border-bottom: 1px solid #cccccc;
+  margin-left: 25px;
+  left: 10px;
+}
+
+.transactionsInputDate{
+  width: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.transactionsInputPayee {
+  width: 40%;
+}
+
+.transactionsInputInflow{
+  width: 25%;
+}
+
+.transactionsInputOutflow{
+  width: 10%;
+}
+/* ---recent transactions block---end--- */
+
+
+/* ---page icons---begin--- */
 .elephant-icon {
   height: 65px;
   width: 65px;
@@ -83,20 +242,6 @@ h2 {
   margin-top: 25px;
 }
 
-.welcome-box {
-  position: relative;
-  width: 550px;
-  border: 0px;
-  margin-top: 20px;
-  padding: 30px 0px 30px 25px;
-  margin-left: 0px;
-  margin-bottom: 20px;
-  background: linear-gradient(to right, #8ed1dc 0%, #e3f4f6 100%);
-  text-align: left;
-  font-size: 20px;
-  box-shadow: rgba(0,0,0,0.05);
-}
-
 .close-icon{
 position:absolute;
 top: 0px;
@@ -107,152 +252,9 @@ margin: 13px;
 cursor: pointer;
 }
 
-.summary {
-  float:left;
-  width: 156px;
-  height: 40px;
-  border: 100px;
-  padding: 20px 0px 30px 15px;
-  margin-left: 0px;
-  margin-right: 30px;
-  /* margin-top: 20px; */
-  background-color: white;
-  text-align: left;
-  font-size: 15px;
-  box-shadow: rgba(0,0,0,0.05);
-}
-
-.amount {
-  display: block;
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.account-header {
-  display: inline-block;
-  float: left;
-  height: 500px;
-}
-
-.manage-button {
-  float: right;
-  margin-top: 35px;
-  margin-right: 75px;
-  /* margin-bottom: 10px; */
-  width: 200px;
-  height: 35px;
-  background-color: #1CA3BA;
-  text-align: center;
-  border-radius: 25px;
-  font-size: 14px;
-  /* font-weight: bold; */
-  color: white;
-  box-shadow: rgba(0,0,0,0.05);
-}
-
-/* .recent-transaction-title {
-  margin-top: 45px;
-  margin-left: 30px;
-  font-size: 350px;
-  font-weight: bold;
-} */
-.transaction-header {
-  display: inline-block;
-  float: left;
-  margin-left: 25px;
-  font-size: 30px;
-  /* height: 500px; */
-  box-shadow: rgba(0,0,0,0.05);
-}
-.transaction-button {
-  float: right;
-  margin-top: 35px;
-  margin-right: 25px;
-  /* margin-bottom: 10px; */
-  width: 200px;
-  height: 35px;
-  background-color: #1CA3BA;
-  text-align: center;
-  border-radius: 25px;
-  font-size: 14px;
-  color: white;
-  box-shadow: rgba(0,0,0,0.05);
-}
-
-.account-table {
-  float: left;
-  margin-left: -95px;
-  margin-top: 15px;
-  width: 570px;
-  height: 65px;
-  background-color: white;
-  font-size: 18px;
-  box-shadow: rgba(0,0,0,0.05);
-}
-.transaction-title{
-  width: 92%;
-  border-bottom: 1px solid silver;
-  margin-left: 25px;
-  /* margin-right: -25px; */
-  left: 10px;
-}
-
-.titleDate{
-  width: 20px;
-}
-
-.titlePayee {
-  width: 40%;
-}
-
-.titleInflow{
-  width: 25%;
-}
-
-.titleOutflow{
-  width: 10%;
-}
-
-.tInput{
-  width: 92%;
-  border-bottom: 1px solid #cccccc;
-  margin-left: 25px;
-  /* margin-right: -25px; */
-  left: 10px;
-}
-
-.tInputDate{
-  width: 20px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-}
-
-.tInputPayee {
-  width: 40%;
-}
-
-.tInputInflow{
-  width: 25%;
-}
-
-.tInputOutflow{
-  width: 10%;
-}
-
-.account-info1 {
-width: 20%;
-}
-
-.account-info2 {
-width: 30%;
-}
-
-.account-info3 {
-padding-left: 130px;
-}
-
 .account-icon {
     height: 30px;
     width: 30px;
     padding-left: 10px;
 }
+/* ---page icons---end--- */
