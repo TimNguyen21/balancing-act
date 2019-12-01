@@ -4,9 +4,16 @@ body {
   font-family: 'Biryani', sans-serif;
 }
 
-h1 {
+.home-header {
   margin-top: 10px;
   margin-bottom: 21px;
+}
+
+.main-transaction-header {
+  margin-top: 10px;
+  margin-bottom: 21px;
+  float:left;
+  font-size: 26px;
 }
 
 h2 {
@@ -30,7 +37,7 @@ h2 {
   background-color: white;
 }
 
-.column1 {
+.home-column1, .transaction-column1 {
   display: inline-block;
   position: absolute;
   float: left;
@@ -97,6 +104,42 @@ h2 {
   color: white;
   box-shadow: rgba(0,0,0,0.05);
 }
+.trans-all-button {
+  display: inline-block;
+  /* float: right; */
+  margin-top: 30px;
+  margin-bottom: 6px;
+  /* margin-right: 20px; */
+  margin-left: 118px;
+  width: 100px;
+  height: 30px;
+  background-color: #1CA3BA;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 12px;
+  color: white;
+  box-shadow: rgba(0,0,0,0.05);
+}
+
+.trans-inflow-button, .trans-outflow-button {
+  display: inline-block;
+  /* float: right; */
+  margin-top: 30px;
+  /* margin-right: 20px; */
+  /* margin-left: 30px; */
+  width: 100px;
+  height: 30px;
+  /* background-color: #1CA3BA; */
+  background-color: white;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 12px;
+  /* color: white; */
+  color: #1CA3BA;
+  box-shadow: rgba(0,0,0,0.05);
+  border: 1px solid #1CA3BA;
+}
+
 
 .account-table {
   float: left;
@@ -122,7 +165,7 @@ padding-left: 130px;
 }
 /* ---accounts block---end--- */
 
-.column2 {
+.home-column2 {
   display: inline-block;
   position: absolute;
   float: left;
@@ -132,11 +175,92 @@ padding-left: 130px;
   padding: 0px;
 }
 
+.trans-column2 {
+  display: inline-block;
+  position: absolute;
+  float: left;
+  width: 610px;
+  height: 840px;
+  left: 710px;
+  padding: 0px;
+  margin-left: 55px;
+}
+
+.trans-container2{
+display: inline-block;
+position: absolute;
+margin-top: 116px;
+margin-left: 35px;
+background-color: white;
+height: 70%;
+width: 90%;
+}
+
+.trans-form-col{
+  margin-left: 90px;
+}
+
+.trans-header {
+  display: inline-block;
+  text-align: center;
+  width: 556px;
+  /* margin-left: 25px; */
+  font-size: 24px;
+  margin-bottom: 15px;
+  box-shadow: rgba(0,0,0,0.05);
+}
+
+.new-trans-title{
+  font-size: 15px;
+}
+.type-of-trans {
+  width: 380px;
+  height: 30px;
+  margin-bottom: 13px;
+  font-size: 14px;
+  box-shadow: rgba(0,0,0,0.05);
+}
+
+.new-trans-input {
+  width: 380px;
+  height: 25px;
+  margin-bottom: 13px;
+  font-size: 14px;
+  box-shadow: rgba(0,0,0,0.05);
+
+}
+
+.trans-input-button {
+  /* float: right; */
+  /* margin-top: 35px;
+  margin-right: 25px; */
+  width: 160px;
+  height: 35px;
+  background-color: #1CA3BA;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 14px;
+  color: white;
+  box-shadow: rgba(0,0,0,0.05);
+}
+
+
 .container2{
 display: inline-block;
 position: absolute;
 margin-top: 116px;
 margin-left: 35px;
+background-color: white;
+height: 70%;
+width: 90%;
+}
+
+.trans-container{
+/* display: inline-block;
+position: absolute; */
+margin-top: 20px;
+/* margin-left: 35px; */
+padding-top: 20px;
 background-color: white;
 height: 70%;
 width: 90%;
@@ -159,6 +283,65 @@ width: 90%;
   margin-left: 25px;
   left: 10px;
 }
+
+.transaction-summary {
+  width: 92%;
+  border-bottom: 1px solid #F6F3F1;
+  margin-left: 25px;
+  left: 10px;
+}
+
+.trans-title-date {
+  width: 20%;
+}
+
+.trans-title-account {
+  width: 25%;
+}
+
+.trans-title-payee {
+  width: 30%;
+}
+
+.trans-title-inflow{
+  width: 25%;
+}
+
+.trans-title-outflow{
+  width: 0%;
+}
+
+.trans-input{
+  width: 92%;
+  border-bottom: 1px solid #cccccc;
+  margin-left: 25px;
+  left: 10px;
+  font-size: 13.5px;
+}
+
+.trans-input-date{
+  width: 17%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.trans-input-account {
+  width: 22.5%;
+}
+
+.trans-input-payee {
+  width: 26%;
+}
+
+.trans-input-inflow{
+  width: 22%;
+}
+
+.trans-input-outflow{
+  width: 12%;
+}
+
+
 
 .transaction-button {
   float: right;
