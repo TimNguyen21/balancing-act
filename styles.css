@@ -37,7 +37,7 @@ h2 {
   background-color: white;
 }
 
-.home-column1, .transaction-column1 {
+.home-column1 {
   display: inline-block;
   position: absolute;
   float: left;
@@ -45,6 +45,19 @@ h2 {
   height: 680px;
   border: 0px;
   padding: 30px;
+  visibility: visible;
+}
+
+.transaction-column1 {
+  display: inline-block;
+  position: absolute;
+  float: left;
+  width: 650px;
+  height: 680px;
+  border: 0px;
+  padding: 30px;
+  /* display: none; */
+  visibility: hidden;
 }
 
 .welcome-box {
@@ -173,6 +186,7 @@ padding-left: 130px;
   height: 740px;
   left: 710px;
   padding: 0px;
+  visibility: visible;
 }
 
 .trans-column2 {
@@ -184,6 +198,7 @@ padding-left: 130px;
   left: 710px;
   padding: 0px;
   margin-left: 55px;
+  visibility: hidden;
 }
 
 .trans-container2{
