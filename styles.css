@@ -430,6 +430,7 @@ width: 90%;
   margin-left: -15px;
   margin-top: 205px;
   border-left: 4px solid #1CA3BA;
+  cursor: pointer;
 }
 
 .transactions-icon {
@@ -437,12 +438,14 @@ width: 90%;
   width: 35px;
   margin-left: -15px;
   margin-top: 20px;
+  cursor: pointer;
 }
 .profile-icon {
   height: 35px;
   width: 35px;
   margin-left: -15px;
   margin-top: 25px;
+  cursor: pointer;
 }
 
 .close-icon{
